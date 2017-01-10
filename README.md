@@ -27,6 +27,11 @@ StyleTemplate: A custom class containing formatting information for the tile
 
 In your styles xaml file create a static resource as follows for the StyleTemplate parameter;
 ```
+<ResourceDictionary
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:tilepanel="using:PurpleTreeSoftware.Panel">    
+ 
  <!-- Tile Panel Style -->
     <SolidColorBrush x:Key="TileBackgroundHoverBrush" Color="{ThemeResource SystemChromeMediumColor}"/>
     <SolidColorBrush x:Key="TileBackgroundPressedBrush" Color="{ThemeResource SystemChromeHighColor}"/>
@@ -48,4 +53,6 @@ In your styles xaml file create a static resource as follows for the StyleTempla
         <tilepanel:TileStyleTemplate.FontSize>20</tilepanel:TileStyleTemplate.FontSize>
     </tilepanel:TileStyleTemplate>
 
+
+</ResourceDictionary>
 ```
