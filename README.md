@@ -15,10 +15,12 @@ xmlns:tile="using:PurpleTreeSoftware.Panel"
 
 Then add the controls to your xaml page. Note to update the x:Bind path to point to your variable. 
 Parameters are;
-Depth: How many rows or columns to create (depending on whether the orientation is horitonal or vertical)
-Orientation: Stack the tiles in a horizontal or vertical fashion
-TileClicked: Event that fires when a tile is clicked
-StyleTemplate: A custom class containing formatting information for the tile
+Depth: How many rows or columns to create (depending on whether the orientation is horitonal or vertical) <br />
+Orientation: Stack the tiles in a horizontal or vertical fashion <br />
+TileClicked: Event that fires when a tile is clicked <br />
+StyleTemplate: A custom class containing formatting information for the tile <br />
+Tiles: An IEnumerable containing a list of PurpleTreeSoftware.Panel.Tile objects. Use an observable collection if you want the list to be updated when items are changed.
+
 ```
 <tile:TilePanel x:Name="TilePanel" Depth="2" Orientation="Vertical" Tiles="{x:Bind TileItems, Mode=OneWay}" TileClicked="TilePanel_TileClicked" StyleTemplate="{StaticResource TileStyleTemplateObject}">
                                     
@@ -57,5 +59,5 @@ In your styles xaml file create a static resource as follows for the StyleTempla
 </ResourceDictionary>
 ```
 
-
+The tile panel displays like the following screenshot; <br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/22990721/21796521/80a5d898-d75d-11e6-8f43-40b9b60507e4.png)
