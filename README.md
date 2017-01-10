@@ -56,3 +56,6 @@ In your styles xaml file create a static resource as follows for the StyleTempla
 
 </ResourceDictionary>
 ```
+
+
+![alt tag](https://cloud.githubusercontent.com/assets/22990721/21796521/80a5d898-d75d-11e6-8f43-40b9b60507e4.png)
